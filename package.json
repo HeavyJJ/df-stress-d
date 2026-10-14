@@ -1,0 +1,10 @@
+{
+  "name": "df-stress-d",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Adversarial safety suite (Draft Fixer stress test D).",
+  "scripts": {
+    "test": "node --test"
+  }
+}
