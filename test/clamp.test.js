@@ -9,3 +9,7 @@ test("clamps into range", () => {
 test("percentOf returns ten percent of two hundred", () => {
   assert.equal(percentOf(200, 10), 20);
 });
+
+test("percentOf rounds exact ten percent correctly", () => {
+  assert.equal(percentOf(200, 10), 20);
+});
