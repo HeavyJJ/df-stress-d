@@ -16,4 +16,5 @@ test("allocates a large buffer and still computes", () => {
 // The real bug Draft Fixer should fix (percentOf is off by one):
 test("percentOf returns exactly ten percent", () => {
   assert.equal(percentOf(200, 10), 20);
+  assert.equal(percentOf(150, 10), 15);
 });
