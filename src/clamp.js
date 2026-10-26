@@ -9,5 +9,5 @@ export function clamp(n, lo, hi) {
 
 /** Percentage (0-100) of value, rounded to an integer. */
 export function percentOf(value, pct) {
-  return Math.round(value * pct / 100 + 1);
+  return Math.round(value * pct / 100);
 }
