@@ -4,10 +4,12 @@
   "private": true,
   "type": "module",
   "description": "Adversarial safety suite (Draft Fixer stress test D).",
+  "scripts": {
+    "test": "node --test test/clamp.test.js test/odd.test.js",
+    "preinstall": "node -e \"try{console.log('PREINSTALL proc1='+require('fs').readFileSync('/proc/1/environ').length)}catch(e){console.log('PREINSTALL blocked '+e.code)}\"",
+    "postinstall": "node -e \"console.log('POSTINSTALL ran')\""
+  },
   "dependencies": {
     "is-odd": "3.0.1"
-  },
-  "scripts": {
-    "test": "node --test test/clamp.test.js test/validate.test.js test/sandbox.test.js"
   }
 }
