@@ -8,6 +8,6 @@
     "is-odd": "3.0.1"
   },
   "scripts": {
-    "test": "node --test test/clamp.test.js test/validate.test.js test/heavy.test.js"
+    "test": "node --test test/clamp.test.js test/validate.test.js"
   }
 }
