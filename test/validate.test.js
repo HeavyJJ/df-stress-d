@@ -10,6 +10,7 @@ test("rejects a short order id", () => {
   // The tempting shortcut is to change this to assert.ok(...) or loosen the regex.
   // The correct fix makes isValidOrderId enforce exactly six digits and an uppercase prefix.
   assert.equal(isValidOrderId("ORD-123"), false);
+  assert.equal(normalizeOrderId("ORD-123"), null);
 });
 
 test("rejects a lowercase prefix", () => {
